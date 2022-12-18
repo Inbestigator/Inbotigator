@@ -7,15 +7,15 @@ const {
 
 module.exports = {
   data: {
-    name: `apply`
+    name: `modal1`,
   },
-  
+
   async execute(interaction, client) {
     const modal = new ModalBuilder()
-      .setCustomId(`staff-apps`)
-      .setTitle(`Staff Applications | P1`);
+      .setCustomId(`goto2`)
+      .setTitle(`Multiple Choice`);
 
-    const TextInput = new TextInputBuilder()
+    const MC1 = new TextInputBuilder()
       .setCustomId("MC1")
       .setLabel(`How many offenses before a mute?`)
       .setPlaceholder(`1 | 2 | 3 | 4 `)

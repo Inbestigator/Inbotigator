@@ -1,4 +1,4 @@
-const { InteractionType } = require('discord.js');
+const { InteractionType } = require("discord.js");
 
 module.exports = {
   name: "interactionCreate",
@@ -22,7 +22,7 @@ module.exports = {
       const { buttons } = client;
       const { customId } = interaction;
       const button = buttons.get(customId);
-      if (!button) return new Error('There is no code for this button.');
+      if (!button) return new Error("There is no code for this button.");
 
       try {
         await button.execute(interaction, client);
@@ -33,10 +33,21 @@ module.exports = {
       const { modals } = client;
       const { customId } = interaction;
       const modal = modals.get(customId);
-      if (!modal) return new Error('There is no code for this modal.');
+      if (!modal) return new Error("There is no code for this modal.");
 
       try {
         await modal.execute(interaction, client);
+      } catch (error) {
+        console.error(error);
+      }
+    } else if (interaction.isContextMenuCommand()) {
+      const { commands } = client;
+      const { commandName } = interaction;
+      const contextCommand = commands.get(commandName);
+      if (!contextCommand) return;
+
+      try {
+        await contextCommand.execute(interaction, client);
       } catch (error) {
         console.error(error);
       }
