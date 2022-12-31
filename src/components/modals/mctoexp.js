@@ -60,7 +60,7 @@ module.exports = {
         break;
     }
     switch (`${interaction.fields.getTextInputValue("MC3")}`) {
-      case "5m":
+      case "10m":
         MC3A = 1;
         console.log(`> MC3A = ${MC3A}`);
 
@@ -78,7 +78,7 @@ module.exports = {
 
     switch (`${MC1A} ${MC2A} ${MC3A}`) {
       case "1 1 1":
-        await interaction.update({
+        await interaction.reply({
           content: ``,
           embeds: [embed],
           components: [new ActionRowBuilder().addComponents(button)],
@@ -89,7 +89,7 @@ module.exports = {
         break;
 
       default:
-        interaction.update({
+        interaction.reply({
           content: `Please try again`,
           embeds: [],
           ephemeral: true,

@@ -27,5 +27,10 @@ module.exports = {
       components: [new ActionRowBuilder().addComponents(button)],
       ephemeral: true
     });
+    // const channel = client.channels.cache.get("1053839192599310387");
+    // channel.send({
+    //   embeds: [embed],
+    //   components: [new ActionRowBuilder().addComponents(button)],
+    // });
   },
 };

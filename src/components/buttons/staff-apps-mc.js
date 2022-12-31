@@ -13,7 +13,7 @@ module.exports = {
   async execute(interaction, client) {
     const modal = new ModalBuilder()
       .setCustomId(`goto2`)
-      .setTitle(`Multiple Choice`);
+      .setTitle(`Multiple Choice | Answer Exactly`);
 
     const MC1 = new TextInputBuilder()
       .setCustomId("MC1")
@@ -36,9 +36,9 @@ module.exports = {
     const MC3 = new TextInputBuilder()
       .setCustomId("MC3")
       .setLabel(`How long do you mute for spam?`)
-      .setPlaceholder(`1m | 5m | 10m | 20m`)
+      .setPlaceholder(`01m | 05m | 10m | 20m`)
       .setMaxLength(3)
-      .setMinLength(2)
+      .setMinLength(3)
       .setRequired(true)
       .setStyle(TextInputStyle.Short);
 
