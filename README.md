@@ -37,13 +37,16 @@
 - Find the part where it says: `const clientId = "1046189896311775272";`
 - Replace `1046189896311775272` with the bot ID you copied earlier
 - Press Ctrl+S to save
-- Create a new file named `.env` in the general explorer
+
+`9)` Create a new file named `.env` in the general explorer
 - In the `.env` file write: `token=<TOKEN>` (substitute <TOKEN> for the token you copied earlier)
 - And Ctrl+S again
 
-`9)` Press the `Terminal` button on the top left
+`10)` Press the `Terminal` button on the top left
 - Click `New Terminal`
 
-`10)` Click on the text box that appeared on the bottom
+`11)` Click on the text box that appeared on the bottom
 - Type `npm i discord.js discord-api-types @discordjs/rest dotenv chalk@4.1.2 mongoose`
 - Type `node .` and press enter	
+
+Good luck!
