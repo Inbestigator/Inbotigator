@@ -31,15 +31,18 @@
 `7)` Press the `<> Code` button on this site
 - Select either `Clone` (if you want to make your own Github repo) or `Download Zip` (to have it just on your computer)
 
-`8)` Unzip and open up the code on your computer 
-- Click on the `functions\handlers` folder
+`8)` Unzip and open up the code on your computer
+- Drag all of the files inside of the `Inbotigator-main` folder out so they aren't inside of it
+- Delete `Inbotigator-main`
+
+`9)` Click on `src`, then `functions`
 - Go into the `handleCommands` file
 - Find the part where it says: `const clientId = "1046189896311775272";`
 - Replace `1046189896311775272` with the bot ID you copied earlier
 - Press Ctrl+S to save
 
 `9)` Create a new file named `.env` in the general explorer
-- In the `.env` file write: `token=<TOKEN>` (substitute <TOKEN> for the token you copied earlier)
+- In the `.env` file write: `token=<TOKEN>` (substitute `<TOKEN>` for the token you copied earlier)
 - And Ctrl+S again
 
 `10)` Press the `Terminal` button on the top left
