@@ -31,7 +31,7 @@
 `7)` Press the `<> Code` button on this site
 - Select either `Clone` (if you want to make your own Github repo) or `Download Zip` (to have it just on your computer)
 
-`8)` Open up the code on your computer 
+`8)` Unzip and open up the code on your computer 
 - Click on the `functions\handlers` folder
 - Go into the `handleCommands` file
 - Find the part where it says: `const clientId = "1046189896311775272";`
